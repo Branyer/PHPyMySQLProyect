@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8"/>
     <title>PHP y MySQL proyect</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <head>
   <body>
     <!--Cabecera -->
+
     <header>
       <h1>PHP Y MySQL</h1>
     </header>
+    <div id="forms" class="forms">
     <!--Form de registro-->
-    <form action="registro.php" method="post">
-      <header>Registrase</header>
+    <form action="registro.php" method="post" class="registro">
+      <header><h2>REGISTRARSE</h2></header>
 
       <label for="nombre" >Nombre:</label>
       <input type="text" id="nombre" name="nombre" placeholder="Branyer"   pattern="[a-zA-z]+" required/>
@@ -25,7 +28,7 @@
       <label for="direccion" >Direccion: </label>
       <input type="text" id="direccion" name="direccion" placeholder="123 calle falsa" required/>
 
-      <label for="Sexo">Sexo:</label>
+      <label for="Sexo">Sexo:</label><br/>
       <input type="radio" id="hombre" name = "Sexo" value="hombre" checked/>
       <label for="hombre">Hombre</label>
       <input type="radio" id="mujer" name = "Sexo" value="mujer"/>
@@ -53,10 +56,19 @@
     </form>
 
     <!--Form de ingreso-->
-    <form action="login.php" method="post">
+    <form action="login.php" method="post" class="login">
+      <h2>LOGIN</h2>
+      <label for="nickname">Nickname: </label>
+      <input type="text" id="nick" name="nickname" required>
+      <label for="pass">Contraseña: </label>
+      <input type="password" id="pass" name="pass" required>
+        <input type="submit" value="Ingresar"/>
+
     </form>
+  </div>
     <!--Pide de pagina-->
     <footer>
+      Realizado por Branyer Vergara
     </footer>
 
 
